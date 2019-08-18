@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Membership.Data\Membership.Data.csproj" />
+    <ProjectReference Include="..\Membership.IData\Membership.IData.csproj" />
+    <ProjectReference Include="..\Membership.SqlServer\Membership.SqlServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SharedMolecules.Core">
+      <HintPath>..\Libraries\SharedMolecules.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SharedMolecules.Dto">
+      <HintPath>..\Libraries\SharedMolecules.Dto.dll</HintPath>
+    </Reference>
+    <Reference Include="SharedMolecules.EFCore.Context">
+      <HintPath>..\Libraries\SharedMolecules.EFCore.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="SharedMolecules.Entities">
+      <HintPath>..\Libraries\SharedMolecules.Entities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
