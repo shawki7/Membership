@@ -5,9 +5,13 @@ UsersRepository:
 JUST a very simple example of getting the data
 
 AuthService:
+
 SignUp
+
 Login
+
 IsEmailExists
+
 IsUsernameExists
 
 
